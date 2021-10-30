@@ -1,0 +1,52 @@
+&.owned-nfts {
+    h2 {
+      width: 100%;
+    }
+    margin: 0 !important;
+    min-height: initial !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .owned-nft {
+      display: flex;
+      position: relative;
+      padding: 0.25rem;
+      width: 30px;
+      height: 30px;
+
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all ease-in-out 0.25s;
+      }
+
+      .token {
+        user-select: none;
+        display:flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 4;
+        text-shadow: 2px 2px 0px #000;
+        transition: all ease-in-out 0.25s;
+        opacity: 0;
+        font-weight: 900;
+      }
+
+      &:hover {
+        img {
+          width: 5rem;
+          height: 5rem;
+          z-index: 3;
+        }
+        .token {
+          opacity:1;
+        }
+      }
+    }
+  }

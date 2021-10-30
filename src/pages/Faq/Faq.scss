@@ -1,0 +1,22 @@
+.faq-description {
+  width: 80%;
+  max-width: 80%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  justify-content: flex-start;
+  margin: 2rem auto;
+  text-align: justify;
+
+  .faq-qa {
+    margin: 1.5rem 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .faq-description {
+    max-width: 850px;
+    font-size: 1.5rem;
+  }
+}

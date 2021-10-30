@@ -1,0 +1,27 @@
+.story-reader {
+  color: #fff;
+}
+.story-close {
+  width: 100px;
+  max-width: 120px;
+  padding: 16px;
+  margin: 0 auto;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.story-nft {
+  img {
+    max-width: 512px;
+  }
+}
+.story-body {
+  width: 512px;
+  margin: 0 auto;
+  text-align: justify;
+}

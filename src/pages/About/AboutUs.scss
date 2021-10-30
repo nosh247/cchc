@@ -1,0 +1,18 @@
+.aboutus-description{
+    width: 90%;
+    max-width: 90%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    margin: 2rem auto;
+}
+
+@media screen and (min-width: 1025px) {
+    .aboutus-description{
+        max-width: 900px;
+        font-size: 1.5rem;
+    }
+}

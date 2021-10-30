@@ -1,0 +1,110 @@
+@import "styles/variables.scss";
+
+.hero-banner {
+  width: 100%;
+  height: 600px;
+  background: #999;
+  position: relative;
+  overflow: hidden;
+
+  .floating-article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    max-width: 720px;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.1s;
+    z-index: 2;
+
+    & > * {
+      user-select: none;
+    }
+
+    .title {
+      font-size: 7rem;
+      text-shadow: 0 0.4rem 0.3rem rgba(0, 0, 0, 1);
+      font-weight: 900;
+      letter-spacing: -5px;
+      line-height: 80px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      text-align: justify;
+      transition: all ease-in-out 0.25s;
+      animation: fadeInRight 1s;
+    }
+
+    .description {
+      font-size: 1rem;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 16px;
+      line-height: 1.56rem;
+      animation: fadeInLeft 1s;
+      backdrop-filter: blur(10px);
+    }
+
+    .hoo-doggo {
+      position: absolute;
+      bottom: -40px;
+      left: -250px;
+      width: 40%;
+      height: auto;
+      transition: all ease-in-out 0.5s;
+      animation: bounceInUp 0.5s;
+    }
+  }
+}
+
+.gradient {
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(-2px 4px #333);
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 500px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-banner {
+    .floating-article {
+      .title {
+        font-size: 5rem;
+        line-height: 58px;
+      }
+      .hoo-doggo {
+        left: -175px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-banner {
+    .floating-article {
+      .title {
+        font-size: 3rem;
+        line-height: 36px;
+      }
+      .hoo-doggo {
+        width: 150px;
+        left: -130px;
+        bottom: 0;
+      }
+    }
+  }
+}

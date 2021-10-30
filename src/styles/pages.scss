@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.section-block {
+  min-height: 200px;
+  color: $main-text-color;
+
+  h1 {
+    text-shadow: 0 0.4rem 0.3rem black;
+  }
+}
+
+/*COLORS*/
+.polygon {
+  color: $polygon;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+/*TRANSFORM*/
+.bold {
+  font-weight: 900;
+}
+.upper {
+  text-transform: uppercase;
+}
+
+
+/*OVERRIDES*/
+a {
+    text-decoration: none;
+}

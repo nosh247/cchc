@@ -1,0 +1,29 @@
+@import 'styles/variables';
+
+.wallet-wrapper {
+  position: fixed;
+  top: 15px;
+  right: 70px;
+  background: $polygon;
+  color: #fff;
+  padding: 0.7rem;
+  max-width: 100px;
+  width: 100px;
+  display: none;
+  text-align: center;
+  border-radius: 999px;
+  user-select: none;
+  cursor: pointer;
+
+  .wallet-address {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wallet-wrapper {
+    display: block;
+  }
+}

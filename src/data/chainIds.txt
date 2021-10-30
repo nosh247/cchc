@@ -1,0 +1,22 @@
+Ethereum Mainnet
+eth, mainnet, 0x1
+Ropsten (Ethereum Testnet)
+testnet, ropsten, 0x3
+Rinkeby (Ethereum Testnet)
+rinkeby, 0x4
+Goerli (Ethereum Testnet)
+goerli, 0x5
+Kovan (Ethereum Testnet)
+kovan, 0x2a
+Binance Smart Chain Mainnet
+bsc, binance, binance smart chain, 0x38
+Binance Smart Chain Testnet
+bsc testnet, binance testnet, binance smart chain testnet, 0x61
+Polygon (Matic) Mainnet
+matic, polygon, 0x89
+Mumbai (Matic Testnet)
+mumbai, matic testnet, polygon testnet, 0x13881
+Avalanche Mainnet
+avalanche, 0xa86a 
+Local Dev Chain (Ganache, Hardhat)
+ganache, hardhat, localdevchain, local devchain ,dev, 0x539

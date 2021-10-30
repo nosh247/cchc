@@ -1,0 +1,62 @@
+.viewcards-showcase {
+  background: #fff;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: content-box;
+  padding: 15px 0;
+}
+.image-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+  display: block;
+  position: relative;
+  margin: 0 10px;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transition: all ease-in-out 0.22s;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  &:hover {
+    img {
+      width: 400px;
+      height: 400px;
+      transform: translate(-50%, -50%) rotate(-15deg);
+    }
+  }
+}
+.viewcard-wrapper {
+  position: relative;
+  margin: 10px 10px;
+  overflow: hidden;
+  min-width: 300px;
+
+  .viewcard-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+
+    .title-text {
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  .image-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+}

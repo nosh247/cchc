@@ -1,0 +1,73 @@
+@import "styles/variables.scss";
+
+.button-holder {
+  transition: all ease-in-out 0.25s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    background: #ccc;
+    border-radius: 999px;
+    padding: 0.785rem 1.5rem 0.785rem 0.9rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    transition: all ease-in-out 0.25s;
+    background: rgb(10, 109, 190);
+    cursor: pointer;
+
+    &.nogutter {
+      padding: 0.785rem 0.9rem;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin: 0 8px;
+    }
+
+    &.uppercase {
+      text-transform: uppercase;
+    }
+
+    &.opensea {
+      background: rgb(10, 109, 190);
+    }
+
+    &.contract {
+      background: $polygon;
+    }
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.login-button {
+  position: fixed;
+  top: 15px;
+  right: 70px;
+  overflow: hidden;
+  padding: 0.7rem;
+  margin: 0 !important;
+  font-size: 1rem;
+  border-radius: 999px;
+  transition: all ease-in-out 0.35s;
+
+  &.hidden {
+    display: none;
+  }
+}

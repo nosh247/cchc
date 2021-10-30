@@ -1,0 +1,1 @@
+export let opensea = "https://opensea.io/collection/cool-crypto-hoomans-club";
